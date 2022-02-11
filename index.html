@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <style>
+        body {background-image:url('./finch-g0218a7530_1920.jpg');
+            background-size:cover;
+            text-align:center;
+            font-family: 'Cambria', Cochin, Georgia, Times, Times New Roman, serif;
+            background: position x 20px;
+            padding-right: 100px;
+            padding-top: 80px;
+            padding-left: 800px;}
+        input{background-color: transparent;
+        color:rgb(27, 26, 26)}
+        ::placeholder{color:whitesmoke}
+        p {color: beige;}
+           
+     
+        
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Ingresa tus nombres"> <br><br>
+    <input type="text" placeholder="Ingresa tus apellidos"><br><br>
+    <input type="email"placeholder="Ingresa tu email"><br>
+    <p>Elige tu tipo de documento:</p>
+    <select>
+        <option value="">Selecciona una opción</option>
+        <option value="">Cédula de ciudadanía</option>
+        <option value="">Tarjeta de identidad</option>
+        <option value="">NIT</option>
+        <option value="">Cédula de extranjería</option>
+        <option value="">Pasaporte</option>
+    </select><br><br>
+    <input type="number"placeholder="Ingresa el número de documento"><br>
+    <p>Selecciona una foto de perfil:</p>
+    <form name="cargue de imagenes" type="post"enctype="multipart/formdata">
+        <input type="file" name="imagen">
+    </form>
+    <p>Elige tu ciudad de residencia:</p>
+    <select>
+        <option value="">Selecciona una opción</option>
+        <option value="">Armenia</option>
+        <option value="">Barranquilla</option>
+        <option value="">Bogotá D.C</option>
+        <option value="">Bucaramanga</option>
+        <option value="">Cali</option>
+        <option value="">Cartagena</option>
+        <option value="">Cúcuta</option>
+        <option value="">Ibagué</option>
+        <option value="">Manizales</option>
+        <option value="">Medellín</option>
+        <option value="">Pereira</option>
+        <option value="">Santamarta</option>
+        <option value="">Villavicencio</option>
+    </select><br>
+    <p>Te identificas con el género:<br>
+    Masculino<input type="radio" name="g"><br>
+    Femenino<input type="radio" name="g"><br>
+    Otro<input type="radio" name="g"><br></p>
+    <input type="tel" placeholder="Ingresa tu número de teléfono"><br><br>
+    <button>Registrarme</button>
+</body>
+</html>
